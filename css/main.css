@@ -3,7 +3,7 @@ html {
   font-family: Roboto;
   margin: 0;
   padding: 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -15,11 +15,17 @@ body {
   margin: 0;
 }
 
+.banner .img-flex {
+  font-family: Roboto;
+}
+
 h2 {
   font-size: 3rem;
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed";
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 p {
@@ -35,16 +41,26 @@ p {
 .banner {
   margin: 0;
   padding: .3rem 1rem;
-  transform: translate(8px, 0);
+  transform: translate(5px, 20px);
   position: absolute;
   max-width: 45em;
   overflow: hidden;
-  justify-content: unset;
+  justify-content: space-between;
 }
 
-.banner .banner-img {
-  display: inline;
-  width: 20%;
+.banner .logo {
+  display: flex;
+  float: left;
+  width: 35%;
+}
+
+.banner .banner-text {
+  display: block;
+  align-items: baseline;
+  left: inherit;
+  float: left;
+  width: 65%;
+  padding-left: 2rem;
 }
 
 header {
